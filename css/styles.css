@@ -459,6 +459,7 @@ header, .navbar {
 }
 
 /* responsive */
+
 @media(max-width: 768px) {
   
   /* geral */
@@ -485,6 +486,7 @@ header, .navbar {
     right: 10%;
   }
   
+
   /* about */
   #about-area img {
     margin-top: 100px;
@@ -632,3 +634,11 @@ header, .navbar {
   }
 
 }
+/*Portfolio*/
+.texto1 {
+  margin-top: 10px;
+}
+.texto2{
+  margin-top: 100px;
+}
+
