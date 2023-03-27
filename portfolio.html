@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> J.S Martins</title>
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+  <!-- Progress Bar -->
+  <script src="js/progressbar.min.js"></script>
+  <!-- Parallax -->
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</head>
+
+    <body>
+        <header>
+            <div class="container" id="nav-container">
+            <!-- add essa class -->
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+                <a class="navbar-brand" href="index.html">
+                <img id="logo" src="img/logo5.png" alt="JSmartins">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" 
+                aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" id="home-menu" href="index.html">Home</span></a>
+                    <a class="nav-item nav-link" id="about-menu" href="index.html">Últimos Lançamentos</a>
+                    <a class="nav-item nav-link" id="services-menu" href="index.html">Portfólio</a>
+                    <a class="nav-item nav-link" id="team-menu" href="index.html">Quem Somos</a>
+                    <a class="nav-item nav-link" id="contact-menu" href="index.html">Contato</a>
+                </div>
+                </div>
+            </nav>
+            </div>
+        </header>
+        <main>
+            <div id="about-area" class="portfolio">
+                <div class="container" id="news-area">
+                    <div class="row">
+                    <div class="col-12 col-md-12"> 
+                        <h3 class="main-title texto1">Casa a Venda em São Roque</h3>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-fluid" id="aqs" src="img/aqs.jpeg" alt="Casa a Venda" >
+                    </div>
+                    <div class="col-md-6 text-left">
+                        <p>Sobrado com localização privilegiadapróximo ao centro, com vista de toda a cidade. 
+                        Com área construída de 288 M2, está bela casa é composta de: </p>
+                        <ul id="about-list">
+                            <li><i class="fas fa-check"></i> 3 dormitórios, sendo 1 suíte com banheira de hidromassagem e closet</li>
+                            <li><i class="fas fa-check"></i> sala de TV</li>
+                            <li><i class="fas fa-check"></i> sala de estar</li>
+                            <li><i class="fas fa-check"></i> sala de jantar</li>
+                            <li><i class="fas fa-check"></i> cozinha</li>
+                            <li><i class="fas fa-check"></i> área de serviço</li>
+                            <li><i class="fas fa-check"></i> escritório</li>
+                            <li><i class="fas fa-check"></i> espaço gourmet</li>
+                            <li><i class="fas fa-check"></i> sauna</li>
+                            <li><i class="fas fa-check"></i> 5 banheiros</li>
+                            <li><i class="fas fa-check"></i> piscina aquecida</li>
+                            <li><i class="fas fa-check"></i> churrasqueira e fogão a lenha</li>
+                            <li><i class="fas fa-check"></i> Casa com  aquecimento solar</li>
+                            <li><i class="fas fa-check"></i> garagem para 4 carros com portão automático</li>
+                            <li><i class="fas fa-check"></i> sala de trabalho com armário de ferramentas</li><br><br>
+                           <p>Quartos, cozinha, área de serviço com móveis planejados em excelente estado de conservação. 
+                            Casa não necessita de reparos, nem manutenção. Documentação e impostos rigorosamente em dia.</p>
+                     </div>
+                <!--Início do Carrossel-->
+                <div class="col-12 col-sm-4" id="news-area">
+                    <div class="row">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide carrossel" data-ride="carousel">
+                            <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 img-fluid" src="img/aqs1.jpeg" alt="Primeiro Slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img-fluid" src="img/aqs3.jpeg" alt="Segundo Slide">
+                            </div>
+                            
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img-fluid" src="img/aqs5.jpeg" alt="Quarto Slide">
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-12 col-sm-4" id="news-area">
+                    <div class="row">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide carrossel" data-ride="carousel">
+                            <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 img-fluid" src="img/aqs6.jpeg" alt="Quinto Slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img-fluid" src="img/aqs7.jpeg" alt="Sexto Slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img-fluid" src="img/aqs8.jpeg" alt="Sétimo Slide">
+                            </div>
+                           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-4" id="news-area">
+                    <div class="row">
+                        <div id="carouselExampleSlidesOnly" class="carousel slide carrossel" data-ride="carousel">
+                            <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 img-fluid" src="img/aqs10.jpeg" alt="Nono Slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img-fluid" src="img/aqs9.jpeg" alt="Oitavo Slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 img-fluid" src="img/aqs4.jpeg" alt="Terceiro Slide">
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <!--Fim do Carrossel-->
+                    
+        <!-- Rodapé -->
+            <footer>
+                <div id="contact-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3 class="main-title">Entre em contato conosco</h3>
+                            </div>
+                            <div class="col-md-4 contact-box">
+                                <i class="fas fa-phone"></i>
+                                <p><span class="contact-tile">Ligue para:</span> (11) 9 5486-9294</p>
+                                <p><span class="contact-tile">Horários:</span> 8:00 - 17:00</p>
+                            </div>
+                            <div class="col-md-4 contact-box">
+                                <i class="fas fa-envelope"></i>
+                                <p><span class="contact-tile">Envie um email:</span> jsmartins.vendas@gmail.com.br</p>
+                            </div>
+                            <div class="col-md-4 contact-box">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p><span class="contact-tile">Venha tomar um café:</span> Rua Lorem Ipsum - 1314</p>
+                            </div>
+                            <div class="col-md-6" id="msg-box">
+                                <p>Ou nos deixe uma mensagem:</p>
+                                </div>
+                            <div class="col-md-6" id="contact-form">
+                            <form action="">
+                                <input type="text" class="form-control" placeholder="E-mail" name="email">
+                                <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                                <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
+                                <input type="submit" class="main-btn">
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="copy-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                        <p>Desenvolvido por <a href="https://sites.google.com/view/grafeno-artes-e-ofcios" target="_blank">Grafeno Artes & Ofícios</a> &copy; 2022</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </footer>
+        <!-- Scripts do projeto -->
+            <script src="js/scripts.js"></script>
+    </body>
+</html>
+        
+        
+
+         

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> J.S Martins</title>
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+  <!-- Progress Bar -->
+  <script src="js/progressbar.min.js"></script>
+  <!-- Parallax -->
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container" id="nav-container">
+      <!-- add essa class -->
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <a class="navbar-brand" href="index.html">
+          <img id="logo" src="img/logo5.png" alt="JSmartins">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" 
+        aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" id="home-menu" href="#">Home</span></a>
+            <a class="nav-item nav-link" id="about-menu" href="#">Últimos Lançamentos</a>
+            <a class="nav-item nav-link" id="services-menu" href="#">Portfólio</a>
+            <a class="nav-item nav-link" id="team-menu" href="#">Quem Somos</a>
+            <a class="nav-item nav-link" id="contact-menu" href="#">Contato</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <!-- slider -->
+      <div id="mainSlider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+          <li data-target="#mainSlider" data-slide-to="1"></li>
+          <li data-target="#mainSlider" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/slide1.jpg" class="d-block w-100" alt="Projetos de e-commerce">
+
+            <!-- tirar classe d-none -->
+
+            <div class="carousel-caption d-md-block">
+              <h2>Quer comprar uma casa?</h5>
+              <p>Conte conosco</p>
+              <a href="#" class="main-btn">Ver portfólio</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide2.jpg" class="d-block w-100" alt="Engenharia de software">
+            <div class="carousel-caption d-md-block">
+              <h2>Não aguenta mais pagar aluguel?</h5>
+              <p>Nossa equipe de corretores está pronta para lhe atender.</p>
+              <a href="#" class="main-btn">Entre em contato</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide4.jpg" class="d-block w-100" alt="Manutenção em software">
+            <div class="carousel-caption d-md-block">
+              <h2>Está buscando uma localização privilegiada?</h5>
+              <p>A J.S. Martis está aqui para lhe ajudar</p>
+              <a href="#" class="main-btn">Entre em contato</a>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- Últimos Lançamentos -->
+      <div id="about-area">
+        <div class="container">
+            <div class="row">
+              <div class="col-12"> 
+                <h3 class="main-title">Casa a Venda no Rochdale</h3>
+              </div>
+              <div class="col-md-6 col-12">
+                <img class="img-fluid" src="img/rochdale_2.jpeg" alt="Casa a Venda" >
+              </div>
+              <div class="col-md-6 col-12">
+                <h3 class="about-title">Vendo ou permuto sobrado no Rochdale</h3>
+                <ul id="about-list">
+                  <li><i class="fas fa-check"></i> 5 dormitórios</li>
+                  <li><i class="fas fa-check"></i> 1 suíte</li>
+                  <li><i class="fas fa-check"></i> sala</li>
+                  <li><i class="fas fa-check"></i> 2 cozinhas</li>
+                  <li><i class="fas fa-check"></i> 4 banheiros</li>
+                  <li><i class="fas fa-check"></i> Churrasqueira com salão fechado com vidros</li>
+                  <li><i class="fas fa-check"></i> rea de serviço no último andar,com tanque, máquina de lavar, 
+                  tanquinho, varais cobertos e descobertos</li>
+                  <li><i class="fas fa-check"></i>  garagem, instalação de gás rua, internet de fibra</li>
+                  <li><i class="fas fa-check"></i>  Excelente localização próximo de escolas, creche, 
+                  bancos, farmácias e  comércios em geral.</li>
+                  <li><i class="fas fa-check"></i> Acompanha armários e outras mobílias, como sofá, 
+                    fogão, geladeira, freezer, cama, estante,etc</li>
+                </ul>
+              </div>
+            </div>
+            <!--Rochdale-->
+            <div class="row">
+              <div class="col-md-3 col-12">
+                <img class="img-fluid" src="img/roch_1.jpg"></div>
+                <div class="col-3">
+                <img class="img-fluid" src="img/roch_2.jpg"></div>
+                <div class="col-3">
+                <img class="img-fluid" src="img/roch_2_2.jpg"></div>
+                <div class="col-3">
+                <img class="img-fluid" src="img/roch_3.jpg"></div>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-md-3 col-12">
+              <img class="img-fluid" src="img/roch_3_3.jpg"></div>
+              <div class="col-md-3 col-12">
+              <img class="img-fluid" src="img/roch_4.jpg"></div>
+              <div class="col-md-3 col-12">
+              <img class="img-fluid" src="img/roch_05.jpg"></div>
+              <div class="col-md-3 col-12">
+              <img class="img-fluid" src="img/roch_06.jpg"></div>
+              </div>
+          </div>
+          </div>
+       
+      <!--Fim dos últimos lançamentos-->
+ 
+      <!-- Casas a Venda -->
+      <div id="services-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+                <h3 class="main-title">Portfólio</h3>
+            </div>
+            <div class="col-md-6 col-12 service-box">
+              <h5 class="card-title text-banner">Vende-se casa em São Roque <br>(Com aquecimento Solar)</h5>
+                <b><p class="card-text"> Para mais informações clique abaixo:</p></b><br><br>
+                <div>
+                <a href="portfolio.html" class="main-btn">Mais Informações</a></div>
+              </div>
+            <div class="col-md-6 col-12">
+              <img class="img-fluid img-banner rounded mx-auto d-block" src="img/aqs.jpeg">
+            </div>
+            
+      <!-- Clientes Felizes -->
+      <div id="data-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-xs-6 circle-box">
+              <div id="circleA"></div>
+              <p>Casas entregues</p>
+            </div>
+            <div class="col-md-3 col-xs-6 circle-box">
+              <div id="circleB"></div>
+              <p>Clientes Felizes</p>
+            </div>
+            <div class="col-md-3 col-xs-6 circle-box">
+              <div id="circleC"></div>
+              <p>Colaboradores</p>
+            </div>  
+            <div class="col-md-3 col-xs-6 circle-box">
+              <div id="circleD"></div>
+              <p>Cafézinhos</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Quem Somos -->
+      <div id="team-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="main-title">Quem Somos</h3>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img src="img/perfil.PNG" class="card-img-top container-fluid" alt="Imagem de Perfil 1">
+                <div class="card-body">
+
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">João Eduardo Martins</h5>
+                <h6>Corretor de imóveis e estabelecimentos comerciais</h6>
+
+                <p class="card-text">CRECI: 206132</p>
+
+                  <p>Vasta experiência em vendas, já atuou em diversoslançamentos de 
+                  empreendimentos imobiliários.<br>
+                  Atualmente atua na região Metropolitana da São Paulo, São Roque e interior paulista.<br>
+                  Além disso, tem experiência nas áreas admnistrativas, treinamento de equipe,
+                  apresentação de produtos, e atendimento ao cliete.
+                  </p>
+                    
+                </div>
+              </div>
+            </div>
+            
+      <!-- Call to Action -->
+      <div id="call-area">
+        <div class="container">
+            <div class="row">
+              <p>Deseja fazer um orçamento sem compromisso?</p>
+              <button class="main-btn" id="call-btn">Orçar</button>
+            </div>
+          </div>
+      </div>
+    </div>
+  </main>
+  <!-- Rodapé -->
+  <footer>
+    <div id="contact-area">
+      <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="main-title">Entre em contato conosco</h3>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-phone"></i>
+              <p><span class="contact-tile">Ligue para:</span> (11) 9 5486-9294</p>
+              <p><span class="contact-tile">Horários:</span> 8:00 - 17:00</p>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-envelope"></i>
+              <p><span class="contact-tile">Envie um email:</span> jsmartins.vendas@gmail.com.br</p>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-map-marker-alt"></i>
+              <p><span class="contact-tile">Venha tomar um café:</span> Rua Lorem Ipsum - 1314</p>
+            </div>
+            <div class="col-md-6" id="msg-box">
+              <p>Ou nos deixe uma mensagem:</p>
+            </div>
+            <div class="col-md-6" id="contact-form">
+              <form action="">
+                <input type="text" class="form-control" placeholder="E-mail" name="email">
+                <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
+                <input type="submit" class="main-btn">
+              </form>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div id="copy-area">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+              <p>Desenvolvido por <a href="https://sites.google.com/view/grafeno-artes-e-ofcios" target="_blank">Grafeno Artes & Ofícios</a> &copy; 2022</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts do projeto -->
+  <script src="js/scripts.js"></script>
+</body>
+</html>
